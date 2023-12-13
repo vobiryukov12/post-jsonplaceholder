@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    scrollbar-gutter: stable;
+  }
+}
+
+@layer components {
+  .loader {
+    @apply inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite];
+  }
+
+  .button {
+    @apply bg-white rounded ease-linear transition-all duration-150;
+  }
+}
